@@ -19,7 +19,7 @@ public class ReceiveAndSendServiceImpl implements ReceiveAndSendService {
 
     @Override
     public void saveReceiveAndSend(String request, String response, String dni) {
-        int idOrigin = 9; // 9 por tabla api_ReceiveAndSendOrigin
+        int idOrigin = 8; // 8 por tabla api_ReceiveAndSendOrigin
         
         // obtengo el idAccount necesario para api_ReceiveAndSend
         Long idAccount = entidadServiceImpl.fetchEntidadByDocumentId(dni);
